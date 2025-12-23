@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cisco Networking Solutions | Product Catalog</title>
+
+  <style>
+    :root {
+      --cisco-blue: #0a66c2;
+      --dark: #0f172a;
+      --gray: #475569;
+      --light: #f8fafc;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--cisco-blue), #003b7a);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.4rem;
+    }
+
+    header p {
+      max-width: 800px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .section-title {
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      border-left: 6px solid var(--cisco-blue);
+      padding-left: 1rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--cisco-blue);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #075985;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin-bottom: 0.8rem;
+      width: fit-content;
+    }
+
+    .features {
+      padding-left: 1rem;
+      color: var(--gray);
+      margin: 1rem 0;
+    }
+
+    .cta {
+      margin-top: 1.5rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--cisco-blue);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5f5;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Enterprise-Grade Cisco Networking</h1>
+  <p>
+    Trusted, scalable infrastructure solutions from
+    <strong>[Cisco Systems](chatgpt://generic-entity?number=0)</strong>,
+    curated for high-volume deployment across SMB, enterprise, and hybrid cloud environments.
+  </p>
+</header>
+
+<main class="container">
+
+  <h2 class="section-title">High-Volume Cisco Products</h2>
+
+  <section class="products">
+
+    <article class="card">
+      <span class="badge">Best Seller • Access Switching</span>
+      <h3>Cisco Catalyst 1000 Series</h3>
+      <p>
+        Enterprise-class Layer 2 access switches designed for small and medium businesses,
+        branch offices, and industrial deployments.
+      </p>
+      <ul class="features">
+        <li>24 / 48-port Gigabit Ethernet</li>
+        <li>PoE+ models available</li>
+        <li>Advanced security & QoS</li>
+        <li>Fanless and compact options</li>
+      </ul>
+      <div class="cta">
+        <a href="#">Request Pricing</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="badge">Top Enterprise Choice</span>
+      <h3>Cisco Catalyst 9200 Series</h3>
+      <p>
+        The backbone of modern campus networks, delivering resilience, performance,
+        and simplified operations.
+      </p>
+      <ul class="features">
+        <li>StackWise® redundancy</li>
+        <li>PoE+/UPOE support</li>
+        <li>SD-Access ready</li>
+        <li>Advanced telemetry & automation</li>
+      </ul>
+      <div class="cta">
+        <a href="#">View Configurations</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="badge">Cloud-Managed Security</span>
+      <h3>Cisco Meraki MX Series</h3>
+      <p>
+        Unified security and SD-WAN appliances managed entirely through the Meraki cloud dashboard.
+      </p>
+      <ul class="features">
+        <li>Next-gen firewall & IDS/IPS</li>
+        <li>Auto-VPN & SD-WAN</li>
+        <li>Zero-touch provisioning</li>
+        <li>Ideal for multi-site businesses</li>
+      </ul>
+      <div class="cta">
+        <a href="#">Explore Meraki</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="badge">Branch Connectivity</span>
+      <h3>Cisco ISR 1100 Series</h3>
+      <p>
+        Secure, modular routers designed for modern branch connectivity and hybrid WAN environments.
+      </p>
+      <ul class="features">
+        <li>Integrated firewall & VPN</li>
+        <li>LTE & 5G options</li>
+        <li>Application-aware routing</li>
+        <li>IOS-XE software</li>
+      </ul>
+      <div class="cta">
+        <a href="#">Get a Quote</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <span class="badge">Wi-Fi 6 / 6E</span>
+      <h3>Cisco Catalyst 9130 Access Points</h3>
+      <p>
+        High-density wireless access points delivering secure, high-performance Wi-Fi for enterprise campuses.
+      </p>
+      <ul class="features">
+        <li>Wi-Fi 6 / 6E support</li>
+        <li>AI-driven RF optimization</li>
+        <li>Secure onboarding</li>
+        <li>Cloud or on-prem management</li>
+      </ul>
+      <div class="cta">
+        <a href="#">Check Availability</a>
+      </div>
+    </article>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    Authorized Cisco Partner • Enterprise Networking • Security • Wireless  
+    <br/>
+    <strong>Skunkworks</strong> – Architecture, Deployment & Support
+  </p>
+</footer>
+
+</body>
+</html>
